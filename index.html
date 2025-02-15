@@ -8,30 +8,30 @@
 </head>
 <body>
     <div class="main-container">
-        <!-- Input Section -->
+    
         <div class="container" id="inputContainer">
             <h1>Weather App</h1>
-            <input type="text" id="cityInput" placeholder="Enter city name">
-            <button onclick="getWeather()">Get Weather</button>
+            <div class="search-container">
+                <input type="text" id="cityInput" placeholder="Enter city name">
+                <button onclick="getWeather()">Get Weather</button>
+                <p>OR</p>
+                <button onclick="getWeatherByLocation()" id="locationButton">📍 Use My Location</button>
+            </div>
         </div>
 
-        <!-- Full Container for Weather Data -->
         <div class="result-container" id="resultContainer" style="display: none;">
             <h2>Weather Forecast</h2>
 
-            <!-- Current Weather Section -->
             <div class="weather-box">
                 <h3>Current Weather</h3>
                 <div id="weatherResult"></div>
             </div>
 
-            <!-- Forecast Section -->
             <div class="forecast-box">
                 <h3>5-Day Forecast</h3>
                 <div id="forecastResult"></div>
             </div>
 
-            <!-- Go Back Button -->
             <button class="go-back" onclick="goBack()">Go Back</button>
         </div>
     </div>
@@ -39,3 +39,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
